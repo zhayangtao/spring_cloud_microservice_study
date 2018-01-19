@@ -1,0 +1,31 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: microservice-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: mysql
+    username: root
+    password: 1234
+    name: zytdb
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///zytdb
+#    schema: classpath:data.sql
+logging:
+  level:
+    root: info
+    org.hibernate: info
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.type.descriptor.sql.BasicExtractor: trace
+    com.zyt.persistence: error
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery:8761/eureka/ # 指定注册中心的地址
+  instance:
+    prefer-ip-address: true
