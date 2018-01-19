@@ -1,0 +1,10 @@
+server:
+  port: 8761 # 指定实例端口
+eureka:
+  instance:
+    hostname: discovery # 指定该Eureka实例的主机名
+  client:
+    register-with-eureka: false
+    fetch-registry: false # 默认情况下，Eureka会将自己也作为客户端尝试注册，所以在单机模式下，我们需要禁止该行为
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka/
