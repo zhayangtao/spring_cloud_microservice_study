@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author zhayangtao
  * @version 1.0
  * @since 2018/1/18
+ * 使用@FeignClient注解的fallback属性，指定fallback类
  */
 @FeignClient(name = "microservice-provider-user", fallback = FeignHystrixService.HystrixClientFallback.class)
 public interface FeignHystrixService {
