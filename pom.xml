@@ -36,6 +36,8 @@
 
         <module>microservice-hystrix-dashboard</module>
 
+        <module>microservice-consumer-movie-feign-with-hystrix-stream</module>
+
     </modules>
 
     <dependencyManagement>
