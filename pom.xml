@@ -46,6 +46,8 @@
 
         <module>microservice-config-client-eureka</module>
 
+        <module>microservice-api-gateway</module>
+
     </modules>
 
     <dependencyManagement>
