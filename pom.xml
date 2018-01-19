@@ -38,6 +38,14 @@
 
         <module>microservice-consumer-movie-feign-with-hystrix-stream</module>
 
+        <module>microservice-config-server</module>
+
+        <module>microservice-config-client</module>
+
+        <module>microservice-config-server-eureka</module>
+
+        <module>microservice-config-client-eureka</module>
+
     </modules>
 
     <dependencyManagement>
