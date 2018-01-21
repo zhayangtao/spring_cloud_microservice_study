@@ -7,4 +7,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false # 默认情况下，Eureka会将自己也作为客户端尝试注册，所以在单机模式下，我们需要禁止该行为
     service-url:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
