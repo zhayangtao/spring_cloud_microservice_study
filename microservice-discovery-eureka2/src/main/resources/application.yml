@@ -1,0 +1,20 @@
+server:
+  port: 8762 # 指定实例端口
+eureka:
+  instance:
+    hostname: eureka-service2 # 指定该Eureka实例的主机名
+  client:
+    register-with-eureka: false # 默认情况下，Eureka会将自己也作为客户端尝试注册，所以在单机模式下，我们需要禁止该行为
+    fetch-registry: false # 单机模式下不需要与其他服务发现同步
+    service-url:
+      defaultZone: http://eureka-service1:8761/eureka/,http://eureka-service3:8763/eureka/
+  server:
+    enable-self-preservation: false  # 本地环境可以关闭自我保护
+
+spring:
+  application:
+    name: eureka-service
+security:
+  user:
+    name: eureka
+    password: eureka
