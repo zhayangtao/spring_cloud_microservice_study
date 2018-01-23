@@ -15,6 +15,7 @@ spring:
     name: zytdb
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql:///zytdb
+    type: com.alibaba.druid.pool.DruidDataSource
 #    schema: classpath:data.sql
 logging:
   level:
