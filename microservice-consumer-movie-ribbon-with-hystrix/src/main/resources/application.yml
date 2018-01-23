@@ -6,7 +6,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://eureka-service1:8761/eureka/,http://eureka-service2:8762/eureka/,http://eureka-service3:8763/eureka/
   instance:
     hostname: ribbon
     # 此处，preferIpAddress不设置或者设为false，不能设为true，否则影响turbine的测试。
