@@ -23,6 +23,8 @@
     <modules>
         <!--服务发现模块-->
         <module>microservice-discovery-eureka</module>
+        <module>microservice-discovery-eureka2</module>
+        <module>microservice-discovery-eureka3</module>
         <!--服务提供者-->
         <module>microservice-provider-user</module>
         <!--服务消费者-->
